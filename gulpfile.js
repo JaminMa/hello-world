@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require('gulp');
 var merge = require('merge-stream');
 var del = require('del');
