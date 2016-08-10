@@ -4,13 +4,17 @@
   "description": "Getting Started with Heroku",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "gulp"
   },
   "author": "Jamin Ma <dev.jamin@gmail.com> (https://github.com/JaminMa)",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "browserify": "^13.1.0",
+    "del": "^2.2.1",
+    "express": "^4.14.0",
     "gulp": "^3.9.1",
+    "merge-stream": "^1.0.0",
+    "path": "^0.12.7",
     "vinyl-source-stream": "^1.1.0"
   }
 }
