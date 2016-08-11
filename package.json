@@ -4,7 +4,8 @@
   "description": "Getting Started with Heroku",
   "main": "index.html",
   "scripts": {
-    "postinstall": "gulp"
+    "postinstall": "gulp",
+    "test": "mocha test/test.js"
   },
   "author": "Jamin Ma <dev.jamin@gmail.com> (https://github.com/JaminMa)",
   "license": "ISC",
