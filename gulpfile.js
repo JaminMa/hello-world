@@ -11,7 +11,7 @@ gulp.task('default', ['build']);
 gulp.task('build', ['clean'], function() {  
   var makeBundle = browserify({
       entries: ['src/js/main.js'],
-      debug: process.env.ENVIRONMENT === 'production'
+      debug: process.env.ENVIRONMENT !== 'production'
     })
     .bundle()
     .pipe(source('bundle.js'))
