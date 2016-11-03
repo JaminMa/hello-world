@@ -1,6 +1,6 @@
 {
   "name": "hello-world",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Getting Started with Heroku",
   "main": "index.html",
   "scripts": {
@@ -10,9 +10,7 @@
   "author": "Jamin Ma <dev.jamin@gmail.com> (https://github.com/JaminMa)",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
-  },
-  "devDependencies": {
+    "express": "^4.14.0",
     "autoprefixer": "^6.5.1",
     "browserify": "^13.1.1",
     "del": "^2.2.1",
@@ -26,8 +24,10 @@
     "gulp-sourcemaps": "^2.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2",
-    "mocha": "^3.0.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
   }
 }
