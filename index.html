@@ -2,10 +2,17 @@
 <html>
   <head>
     <title>Hello</title>
+    <!-- build:css styles.min.css -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- endbuild -->
   </head>
   <body>
     <h1>Hello World</h1>
-    <div id="container"></div>
+    <div id="container" class="container">
+      <p class="italic">This is an example</p>
+    </div>
+    <!-- build:js bundle.min.js -->
     <script src="bundle.js"></script>
+    <!-- endbuild -->
   </body>
 </html>
