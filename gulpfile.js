@@ -11,10 +11,15 @@ var destDir = 'public/';
 
 var isProduction = process.env.ENVIRONMENT === 'production';
 
-gulp.task('default', ['build-html', 'build-js', 'build-css']);
+gulp.task('default', ['copy-favicon', 'build-html', 'build-js', 'build-css']);
 
 gulp.task('clean', function(){
   return del([destDir + '**/*']);
+});
+
+gulp.task('copy-favicon', function(){
+  return gulp.src('favicon.ico')
+  .pipe(gulp.dest(destDir));
 });
 
 gulp.task('build-html', function() {
